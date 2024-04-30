@@ -17,11 +17,7 @@ package com.ccx2.wordCounter2;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
-//import static org.junit.jupiter.api.Assertions.assertEquals;
-//import static org.mockito.Mockito.*;
 
 public class WordCounter2ApplicationTests {
 
@@ -38,10 +34,10 @@ public class WordCounter2ApplicationTests {
     }
 
 
-//    @Test
-//    public void testAddWords(){
-//        wordCounter.addWords(("flower"));
-//    }
+    @Test
+    public void testAddWords(){
+        wordCounter.addWords(("flower"));
+    }
 
     @Test
     public void testAddWordSingleCount() {
@@ -75,11 +71,11 @@ public class WordCounter2ApplicationTests {
     }
 
 
-//    @Test
-//    public void testPrintMapContents() {
-//        wordCounter.addWords("flower", "flor", "blume","Flower");
-//        System.out.println(wordCounter.printWordCounts());
-//    }
+    @Test
+    public void testPrintWordCounts() {
+        wordCounter.addWords("flower", "flor", "blume","Flower");
+        System.out.println(wordCounter.printWordCounts());
+    }
 
 
 }

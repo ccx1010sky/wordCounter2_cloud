@@ -39,6 +39,10 @@ public class WordCounter {
         return wordCounts.getOrDefault(translatedWord, 0);
     }
 
+    // Method to print the entire map for debugging
+    public synchronized String printWordCounts() {
+        return wordCounts.toString();
+    }
 
 
 }
