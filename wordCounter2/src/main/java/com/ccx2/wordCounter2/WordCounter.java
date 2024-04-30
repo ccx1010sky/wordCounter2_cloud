@@ -10,7 +10,7 @@ public class WordCounter {
 
     private final Map<String, Integer> wordCounts = new HashMap<>();
 
-//    @Autowired
+//  @Autowired
     private final RealTranslator translator;
 
     //Constructor

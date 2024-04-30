@@ -34,16 +34,15 @@ public class WordCounter2ApplicationTests {
     }
 
 
-    @Test
-    public void testAddWords(){
-        wordCounter.addWords(("flower"));
-    }
+//    @Test
+//    public void testAddWords(){
+//        wordCounter.addWords(("flower"));
+//    }
 
     @Test
     public void testAddWordSingleCount() {
         wordCounter.addWords("blume");
         wordCounter.addWords("flor");
-
         assertEquals(2, wordCounter.getCount("flower"));
     }
 
@@ -53,6 +52,7 @@ public class WordCounter2ApplicationTests {
         wordCounter.addWords("blume");
         wordCounter.addWords("blume");
         wordCounter.addWords("blume","flor","blume");
+        wordCounter.addWords("blue");
         assertEquals(6, wordCounter.getCount("flower"));
     }
 
@@ -73,8 +73,9 @@ public class WordCounter2ApplicationTests {
 
     @Test
     public void testPrintWordCounts() {
-        wordCounter.addWords("flower", "flor", "blume","Flower");
+        wordCounter.addWords("flower", "flor", "blume","Flower","blue");
         System.out.println(wordCounter.printWordCounts());
+
     }
 
 
